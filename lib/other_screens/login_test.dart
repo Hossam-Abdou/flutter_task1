@@ -21,10 +21,7 @@ class test extends StatelessWidget {
             child: Container(
               margin: EdgeInsets.only(top: 40),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  topLeft:     Radius.circular(30),
-                  topRight:    Radius.circular(30),
-                ),
+                borderRadius: BorderRadius.only(topLeft:Radius.circular(30), topRight:Radius.circular(30),),
                 color: Colors.white,
               ),
               child: Column(
@@ -35,6 +32,7 @@ class test extends StatelessWidget {
                     image: NetworkImage('https://pbs.twimg.com/profile_images/1504092766879551488/iyCFUhnE_400x400.jpg'),
                     width: 150,height: 100,),
                   SizedBox(height: 5),
+                  // textformfield E-mail
                   TextFormField(
                     decoration: InputDecoration(
                       border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
@@ -44,6 +42,8 @@ class test extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 10),
+
+                  //textformfield password
                   TextFormField(
                     decoration: InputDecoration(
                       border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
