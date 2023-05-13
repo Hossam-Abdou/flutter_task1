@@ -9,7 +9,7 @@ class Transfer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.white,
@@ -36,30 +36,42 @@ class Transfer extends StatelessWidget {
           ) ,
         ] ,
       ),
-      body:Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: SingleChildScrollView(
-          child: Column(children: [
+      body:Column(children: [
+        Expanded(
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Colors.white,
+            ),
+            child:Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Column(children: [
                 Row(children: [
-                Text('Today, 25 june'),
+                  Text('Today, 25 june'),
+                ],),
+                transferBuild(Data(image: 'images/apple.png',name: 'Apple store',date:'22 june,2022',price: 220.0,type: 'master card',container: Color(0xfff3f3f3))),
+                transferBuild(Data(image: 'images2/netflix.png',name:'Netflix',date:  '21 june,2022',price: 170.0,type: 'master card',container: Color(0xfffcd9dd)),),
+                transferBuild(Data(image: 'images2/spotify.png',name: 'spotify',date: '20 june,2022',price: 54.0,type: 'master card',container: Color(0xffdcfbe7)),),
+                transferBuild(  Data(image: 'images2/dribble.png',name:'Dribble',date: '18 june, 2022',price: 107,type: 'master card',container: Color(0xfffde6ee)),),
+                Row(children: [
+                  Text('Yesterday'),
+                ],),
+                transferBuild(Data(image: 'images2/behance2.png',name: 'Behance',date:   '18 june, 2022',price: 150,type: 'Credit card',container: Color(0xffd8e6ff)),),
+                transferBuild(Data(image: 'images2/linkedin.png',name: 'Linkedin',date: '18 june, 2022',price: 463.2,type: 'Debit card' ,container: Color(0xffd9eaf4)),),
+                transferBuild(Data(image: 'images2/snapchat.png',name: 'Snapchat',date: '18 june, 2022',price: 220,type: 'Debit card' ,container: Color(0xfffff3d9)),),
+                Row(children: [
+                  Text('20 june,2022'),
+                ],),
+                transferBuild(Data(image:'images2/skype.png',name: 'skype',date: '15 june, 2022',price: 220,type: 'Debit card' ,container: Color(0xffd8f5fd)),),
+                transferBuild(Data(image:'images2/figma.png',name: 'Figma',date: '15 june, 2022',price: 220,type: 'Credit card',container: Color(0xfff5f5f5)),),
               ],),
-            transferBuild(Data(image: 'images/apple.png',name: 'Apple store',date:'22 june,2022',price: 220.0,type: 'master card',container: Color(0xfff3f3f3))),
-            transferBuild(Data(image: 'images2/netflix.png',name:'Netflix',date:  '21 june,2022',price: 170.0,type: 'master card',container: Color(0xfffcd9dd)),),
-            transferBuild(Data(image: 'images2/spotify.png',name: 'spotify',date: '20 june,2022',price: 54.0,type: 'master card',container: Color(0xffdcfbe7)),),
-            transferBuild(  Data(image: 'images2/dribble.png',name:'Dribble',date: '18 june, 2022',price: 107,type: 'master card',container: Color(0xfffde6ee)),),
-                Row(children: [
-                    Text('Yesterday'),
-                  ],),
-            transferBuild(Data(image: 'images2/behance2.png',name: 'Behance',date:   '18 june, 2022',price: 150,type: 'Credit card',container: Color(0xffd8e6ff)),),
-            transferBuild(Data(image: 'images2/linkedin.png',name: 'Linkedin',date: '18 june, 2022',price: 463.2,type: 'Debit card' ,container: Color(0xffd9eaf4)),),
-            transferBuild(Data(image: 'images2/snapchat.png',name: 'Snapchat',date: '18 june, 2022',price: 220,type: 'Debit card' ,container: Color(0xfffff3d9)),),
-                Row(children: [
-                Text('20 june,2022'),
-              ],),
-            transferBuild(Data(image:'images2/skype.png',name: 'skype',date: '15 june, 2022',price: 220,type: 'Debit card' ,container: Color(0xffd8f5fd)),),
-            transferBuild(Data(image:'images2/figma.png',name: 'Figma',date: '15 june, 2022',price: 220,type: 'Credit card',container: Color(0xfff5f5f5)),),
-          ],),
-        ),)
+            ),
+
+          ),
+        )
+
+
+      ],)
       );
   }}
 

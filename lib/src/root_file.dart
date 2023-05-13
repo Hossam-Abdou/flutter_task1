@@ -13,7 +13,7 @@ class Approot extends StatelessWidget {
   {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Azkar(),
+      home: Post(),
     );
 
   }
