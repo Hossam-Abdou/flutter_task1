@@ -1,3 +1,4 @@
+import 'package:eraasoft7/other_screens/Teams_counter.dart';
 import 'package:eraasoft7/other_screens/test.dart';
 import 'package:eraasoft7/screens/2nd_post_screen/2nd_post_screen.dart';
 import 'package:eraasoft7/screens/3rd_login_screen/3rd_login_screen.dart';
@@ -13,7 +14,7 @@ class Approot extends StatelessWidget {
   {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Post(),
+      home: Basket(),
     );
 
   }
