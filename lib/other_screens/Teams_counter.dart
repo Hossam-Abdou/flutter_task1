@@ -45,7 +45,7 @@ int Bpoints=0;
                 setState(() {
                 });
               },
-                  child: Text('Add 3 point',
+                  child: Text('Add 2 point',
                       style: TextStyle(fontSize: 15,color: Colors.black)
                   ),
                   style:ElevatedButton.styleFrom(backgroundColor: Colors.orange,
@@ -92,7 +92,7 @@ int Bpoints=0;
               setState(() {
               });
             },
-                child: Text('Add 3 point',
+                child: Text('Add 2 point',
                   style: TextStyle(fontSize: 15,color: Colors.black)
                 ),
                 style:ElevatedButton.styleFrom(backgroundColor: Colors.orange,
