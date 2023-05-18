@@ -8,7 +8,6 @@ class Basket extends StatefulWidget {
 
 class _BasketState extends State<Basket> {
 int Apoints=0;
-
 int Bpoints=0;
 
   @override
@@ -42,7 +41,7 @@ int Bpoints=0;
               SizedBox(height: 10,),
               ElevatedButton(onPressed: ()
               {
-                Apoints+=3;
+                Apoints+=2;
                 setState(() {
                 });
               },
@@ -89,7 +88,7 @@ int Bpoints=0;
             SizedBox(height: 10,),
             ElevatedButton(onPressed: ()
             {
-              Bpoints+=3;
+              Bpoints+=2;
               setState(() {
               });
             },
